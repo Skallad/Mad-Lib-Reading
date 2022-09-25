@@ -12,7 +12,7 @@ while play:
     Title followed by user input prompt and y/n question in end
     which throws user back to beginning or ends game.
     """
-    tprint("Mad Lib Reading", font="5lineoblique", chr_ignore=True)
+    tprint("Mad lib reading", font="small", chr_ignore=True)
 
     class MadLibReader:
         path = "templates/"
