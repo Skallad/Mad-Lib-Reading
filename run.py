@@ -62,7 +62,7 @@ while play:
     mad_lib.show_poem()
 
     # Question if want to play again
-    again = (input("\nDo you want to play again? Y or N:\n")
+    again = input("\nDo you want to play again? Y or N:\n")
     if again == "N":
         play = False
     else:
