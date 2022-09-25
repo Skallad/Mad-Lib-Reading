@@ -2,7 +2,7 @@
 import json
 import os
 from art import tprint
-from rich import *
+from rich import print
 
 
 play = True
@@ -13,6 +13,7 @@ while play:
     which throws user back to beginning or ends game.
     """
     tprint("Mad Lib Reading", font="5lineoblique", chr_ignore=True)
+
     class MadLibReader:
         path = "templates/"
 
@@ -31,7 +32,7 @@ while play:
                 data = json.load(f)
             mad_lib = cls(**data)
             return mad_lib
-        
+
         # word prompts
         def get_user_input(self):
             print("""
@@ -41,7 +42,8 @@ while play:
 
             Maybe with a laugh or two to accompany you ;)
 
-            Please enter the prompted word, then press [b green]enter[/b green].
+            Please enter an appropriate word
+            then [b green]enter[/b green].
             """)
             for desc in self.word_inputs:
                 ui = input(desc + ": \n")
