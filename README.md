@@ -51,7 +51,6 @@ I have manually tested the project by:
 Mad Lib Reading was deployed using Code Institute's moch terminal for Heroku.  
   
 - Steps for deployment:
-  - Fork or clone this repository
   - Create a new Heroku app
   - Add PORT 8000 to a Config Var
   - Add buildbacks  
